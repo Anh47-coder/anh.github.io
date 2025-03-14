@@ -1,0 +1,172 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #eaeaea;
+    text-align: center;
+    padding: 1rem;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav .menu li {
+    margin: 0 1rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    color: #0077b6;
+}
+
+.welcome {
+    text-align: center;
+    margin: 2rem;
+}
+
+.welcome h1 {
+    color: #3a69af;
+    font-size: 2rem;
+}
+
+.welcome p {
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.welcome img {
+
+    width: 80%;
+    max-width: 400px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.search {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.search h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    display: inline-flex;
+    width: 300px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.search-bar button {
+    width: 20%;
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 1rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(100% - 2rem);
+    max-width: 300px;
+    margin: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #00b4d8;
+}
+
+footer ul li a:hover {
+    color: #0077b6;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .welcome img {
+        width: 100%;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin: 1rem auto;
+    }
+}
